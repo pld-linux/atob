@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-cd doc && xsltproc -o atob.html html.xsl atob.docb
+cd doc && xsltproc --xinclude -o atob.html html.xsl atob.docb
 
 %clean
 rm -rf $RPM_BUILD_ROOT
