@@ -1,26 +1,30 @@
 Summary:	Ain't Tape Oriented Backup
-Summary(pl):	System Kopii Zapasowych Niezorientowany na Ta¶my
+Summary(pl):	Ain't Tape Oriented Backup - system kopii zapasowych
 Name:		atob
 Version:	0.14.100
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	cvs://cvs.pld.org.pl/cvsroot/%{name}-%{version}.tar.gz
-Vendor:		wrobell <wrobell@ite.pl>
+Vendor:		wrobell <wrobell@pld.org.pl>
 BuildArch:	noarch
 Requires:	atob
 Requires:	findutils
 Requires:	grep
 Requires:	sh-utils
 Requires:	textutils
-Requires:	tar
+BuildRequires:	atob
+BuildRequires:	findutils
+BuildRequires:	grep
+BuildRequires:	sh-utils
+BuildRequires:	textutils
 BuildRequires:	libxslt-progs
 BuildRequires:	docbook-style-xsl
 BuildRequires:	docbook-dtd42-xml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-atob is based on tob (Tape Oriented Backup). The main difference
+Atob is based on tob (Tape Oriented Backup). The main difference
 between tob and atob is that only afio is supported to create backups.
 
 The atob package presents a shell-script to create and maintain full
@@ -29,14 +33,14 @@ or differential or incremental backups. Backups are defined by a
 documentation.
 
 %description -l pl
-atob bazuje na tob (System Kopii Zapasowych zorientowany na Ta¶my).
-G³ówn± ró¿nic± pomiêdzy tob i atob jest to, ¿e atob potrafi u¿ywaæ
-afio do tworzenia kopii zapasowych.
+Atob bazuje na tob (Tape Oriented Backup - system kopii zapasowych
+zorientowany na ta¶my).  G³ówn± ró¿nic± pomiêdzy tob i atob jest to, ¿e
+atob potrafi u¿ywaæ afio do tworzenia kopii zapasowych.
 
 Pakiet atob to skrypt shella do tworzenia pe³nych, ró¿nicowych lub
-inkrementalnych kopii zapasowych. Kopie zdefiniowane s± poprzez
-`volumeny', listy kopii s± utrzymywane. Archiwum zawiera dok³adn±
-dokumentacjê.
+przyrostowych kopii zapasowych. Kopie, zdefiniowane s± za pomoc±
+`wolumenów'. Informacja o tym, co zosta³o zarchiwizowane jest
+przechowywana w systemie. Archiwum zawiera dok³adn± dokumentacjê.
 
 %prep
 %setup -q
