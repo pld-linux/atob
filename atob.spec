@@ -5,7 +5,9 @@ Version:	0.14.108
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	cvs://cvs.pld.org.pl/cvsroot/%{name}-%{version}.tar.bz2
+# Source0-md5:	835ddc8f017d1ec66ad357f231ee16ca
+Source0:	http://ep09.kernel.pl/~djrzulf/atob-0.14.108.tar.bz2	
+#Source0:	cvs://cvs.pld.org.pl/cvsroot/%{name}-%{version}.tar.bz2
 Vendor:		wrobell <wrobell@pld-linux.org>
 Requires:	afio
 Requires:	findutils
