@@ -1,7 +1,7 @@
 Summary:	Ain't Tape Oriented Backup
 Summary(pl):	Ain't Tape Oriented Backup - system kopii zapasowych
 Name:		atob
-Version:	0.14.104
+Version:	0.14.105
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
@@ -66,7 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc doc/*.html AUTHORS README TODO examples/[a-z]*
 %attr(755,root,root) %{_sbindir}/*
-%{_mandir}/man?/*
 %dir %{_sysconfdir}/atob
 %dir %{_sysconfdir}/atob/volumes
 %config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/atob/atobrc
