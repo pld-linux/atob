@@ -1,11 +1,11 @@
 Summary:	Ain't Tape Oriented Backup
 Summary(pl):	Ain't Tape Oriented Backup - system kopii zapasowych
 Name:		atob
-Version:	0.14.102
+Version:	0.14.103
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	cvs://cvs.pld.org.pl/cvsroot/%{name}-%{version}.tar.gz
+Source0:	cvs://cvs.pld.org.pl/cvsroot/%{name}-%{version}.tar.bz2
 Vendor:		wrobell <wrobell@pld.org.pl>
 Requires:	afio
 Requires:	findutils
@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/*.html AUTHORS README TODO examples/*.*
+%doc doc/*.html AUTHORS README TODO examples/[a-z]*
 %attr(755,root,root) %{_sbindir}/*
 %{_mandir}/man?/*
 %dir %{_sysconfdir}/atob
