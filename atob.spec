@@ -7,7 +7,6 @@ License:	GPL
 Group:		Networking/Utilities
 Source0:	cvs://cvs.pld.org.pl/cvsroot/%{name}-%{version}.tar.gz
 Vendor:		wrobell <wrobell@pld.org.pl>
-BuildArch:	noarch
 Requires:	afio
 Requires:	findutils
 Requires:	grep
@@ -21,6 +20,7 @@ BuildRequires:	textutils
 BuildRequires:	libxslt-progs
 BuildRequires:	docbook-style-xsl
 BuildRequires:	docbook-dtd42-xml
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_localstatedir	%{_var}/lib/atob
