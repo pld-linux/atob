@@ -8,12 +8,12 @@ Group:		Networking/Utilities
 Source0:	cvs://cvs.pld.org.pl/cvsroot/%{name}-%{version}.tar.gz
 Vendor:		wrobell <wrobell@pld.org.pl>
 BuildArch:	noarch
-Requires:	atob
+Requires:	afio
 Requires:	findutils
 Requires:	grep
 Requires:	sh-utils
 Requires:	textutils
-BuildRequires:	atob
+BuildRequires:	afio
 BuildRequires:	findutils
 BuildRequires:	grep
 BuildRequires:	sh-utils
@@ -22,6 +22,8 @@ BuildRequires:	libxslt-progs
 BuildRequires:	docbook-style-xsl
 BuildRequires:	docbook-dtd42-xml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_localstatedir	%{_var}/lib/atob
 
 %description
 Atob is based on tob (Tape Oriented Backup). The main difference
@@ -62,10 +64,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/*.html AUTHORS README TODO
+%doc doc/*.html AUTHORS README TODO examples/*.*
 %attr(755,root,root) %{_sbindir}/*
 %{_mandir}/man?/*
 %dir %{_sysconfdir}/atob
 %dir %{_sysconfdir}/atob/volumes
 %config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/atob/atobrc
-%attr(750,root,root) %dir %{_var}/lib/atob
+%attr(750,root,root) %dir %{_localstatedir}/atob
