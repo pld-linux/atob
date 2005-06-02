@@ -15,7 +15,6 @@ Requires:	grep
 Requires:	sh-utils
 Requires:	textutils
 BuildRequires:	afio
-BuildRequires:	findutils
 BuildRequires:	grep
 BuildRequires:	sh-utils
 BuildRequires:	textutils
