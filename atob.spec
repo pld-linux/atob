@@ -5,7 +5,7 @@ Version:	0.14.108
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	http://ep09.pld-linux.org/~djrzulf/atob-0.14.108.tar.bz2
+Source0:	http://ep09.pld-linux.org/~djrzulf/%{name}-%{version}.tar.bz2
 # Source0-md5:	835ddc8f017d1ec66ad357f231ee16ca
 #Source0:	cvs://cvs.pld.org.pl/cvsroot/%{name}-%{version}.tar.bz2
 Vendor:		wrobell <wrobell@pld-linux.org>
@@ -37,7 +37,7 @@ documentation.
 
 %description -l pl
 Atob bazuje na tob (Tape Oriented Backup - system kopii zapasowych
-zorientowany na ta¶my).  G³ówn± ró¿nic± pomiêdzy tob i atob jest to, ¿e
+zorientowany na ta¶my). G³ówn± ró¿nic± pomiêdzy tob i atob jest to, ¿e
 atob potrafi u¿ywaæ afio do tworzenia kopii zapasowych.
 
 Pakiet atob to skrypt shella do tworzenia pe³nych, ró¿nicowych lub
@@ -69,5 +69,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_sbindir}/*
 %dir %{_sysconfdir}/atob
 %dir %{_sysconfdir}/atob/volumes
-%config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/atob/atobrc
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/atob/atobrc
 %attr(750,root,root) %dir %{_localstatedir}/atob
