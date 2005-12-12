@@ -9,18 +9,18 @@ Source0:	http://ep09.pld-linux.org/~djrzulf/%{name}-%{version}.tar.bz2
 # Source0-md5:	835ddc8f017d1ec66ad357f231ee16ca
 #Source0:	cvs://cvs.pld.org.pl/cvsroot/%{name}-%{version}.tar.bz2
 Vendor:		wrobell <wrobell@pld-linux.org>
+BuildRequires:	afio
+BuildRequires:	docbook-dtd42-xml
+BuildRequires:	docbook-style-xsl
+BuildRequires:	grep
+BuildRequires:	libxslt-progs
+BuildRequires:	sh-utils
+BuildRequires:	textutils
 Requires:	afio
 Requires:	findutils
 Requires:	grep
 Requires:	sh-utils
 Requires:	textutils
-BuildRequires:	afio
-BuildRequires:	grep
-BuildRequires:	sh-utils
-BuildRequires:	textutils
-BuildRequires:	libxslt-progs
-BuildRequires:	docbook-style-xsl
-BuildRequires:	docbook-dtd42-xml
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
