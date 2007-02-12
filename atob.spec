@@ -1,5 +1,5 @@
 Summary:	Ain't Tape Oriented Backup
-Summary(pl.UTF-8):   Ain't Tape Oriented Backup - system kopii zapasowych
+Summary(pl.UTF-8):	Ain't Tape Oriented Backup - system kopii zapasowych
 Name:		atob
 Version:	0.14.108
 Release:	1
