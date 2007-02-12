@@ -1,5 +1,5 @@
 Summary:	Ain't Tape Oriented Backup
-Summary(pl):	Ain't Tape Oriented Backup - system kopii zapasowych
+Summary(pl.UTF-8):   Ain't Tape Oriented Backup - system kopii zapasowych
 Name:		atob
 Version:	0.14.108
 Release:	1
@@ -35,15 +35,15 @@ or differential or incremental backups. Backups are defined by a
 `volume', listings of backups are kept. The archive contains extensive
 documentation.
 
-%description -l pl
+%description -l pl.UTF-8
 Atob bazuje na tob (Tape Oriented Backup - system kopii zapasowych
-zorientowany na ta¶my). G³ówn± ró¿nic± pomiêdzy tob i atob jest to, ¿e
-atob potrafi u¿ywaæ afio do tworzenia kopii zapasowych.
+zorientowany na taÅ›my). GÅ‚Ã³wnÄ… rÃ³Å¼nicÄ… pomiÄ™dzy tob i atob jest to, Å¼e
+atob potrafi uÅ¼ywaÄ‡ afio do tworzenia kopii zapasowych.
 
-Pakiet atob to skrypt shella do tworzenia pe³nych, ró¿nicowych lub
-przyrostowych kopii zapasowych. Kopie, zdefiniowane s± za pomoc±
-`wolumenów'. Informacja o tym, co zosta³o zarchiwizowane jest
-przechowywana w systemie. Archiwum zawiera dok³adn± dokumentacjê.
+Pakiet atob to skrypt shella do tworzenia peÅ‚nych, rÃ³Å¼nicowych lub
+przyrostowych kopii zapasowych. Kopie, zdefiniowane sÄ… za pomocÄ…
+`wolumenÃ³w'. Informacja o tym, co zostaÅ‚o zarchiwizowane jest
+przechowywana w systemie. Archiwum zawiera dokÅ‚adnÄ… dokumentacjÄ™.
 
 %prep
 %setup -q
